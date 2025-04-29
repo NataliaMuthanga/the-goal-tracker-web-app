@@ -184,4 +184,30 @@ img {
         margin-top: 10px;
         font-size: large;
     }
+
+    .hero .section-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+    }
+
+    .hero .hero-details :is(.title, .subtitle) {
+        max-width: 100%;
+    }
+
+    .hero .section-content .hero-image {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .hero .hero-details .introduction {
+        max-width: 100%;
+    }
+    
+    .hero .hero-details .button {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
