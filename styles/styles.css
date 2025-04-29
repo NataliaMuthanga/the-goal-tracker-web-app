@@ -64,6 +64,7 @@ body.show-mobile-menu .navigation .menu {
 
 .navigation :where(#menu-open-button) {
     display: none;
+    color: var(--primary-color);
 }
 
 /* Styling for the whole site */
