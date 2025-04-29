@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -210,4 +210,55 @@ img {
         max-width: 100%;
         margin: 0 auto;
     }
+}
+
+/* Styling about.html */
+.about-section {
+    padding: 100px;
+    background-color: var(--secondary-color);
+}
+
+.about-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.founders {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+.founder {
+    border: 1px solid transparent;
+    justify-content: center;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.founder-image {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.home-footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
 }
