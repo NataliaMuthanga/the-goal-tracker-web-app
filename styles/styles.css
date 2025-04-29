@@ -27,6 +27,7 @@
     color: var(--secondary-color);
 }
 
+
 nav {
     background-color: var(--primary-color);
 }
@@ -52,6 +53,9 @@ nav {
     gap: 20px;
 }
 
+.navigation .menu :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
 
 /* Styling for the whole site */
 ul {
@@ -135,10 +139,24 @@ img {
     :root {
         --font-size: 14px;
     }
+
+    .navigation .menu :where(#menu-close-button, #menu-open-button) {
+        display: block;
+    }
+
+    .navigation #menu-close-button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .navigation #menu-open-button {
+        color: white;
+    }
+
     .navigation .menu {
         display: block;
         position: fixed;
-        left: 0;
+        left: -250px;
         top: 0;
         width: 250px;
         height: 100%;
