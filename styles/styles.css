@@ -53,7 +53,16 @@ nav {
     gap: 20px;
 }
 
-.navigation .menu :where(#menu-close-button, #menu-open-button) {
+body.show-mobile-menu .navigation .menu {
+    left: 0;
+    transition: left 0.3s ease;
+}
+
+.navigation .menu :where(#menu-close-button) {
+    display: none;
+}
+
+.navigation :where(#menu-open-button) {
     display: none;
 }
 
@@ -81,6 +90,7 @@ img {
 .hero {
     min-height: 100vh;
     background-color: var(--primary-color);
+    padding: 20px;
 }
 
 .hero .section-content{
