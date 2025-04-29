@@ -1,0 +1,70 @@
+/* These styles apply to the whole document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --primary-color: #39061c;
+    --secondary-color: #f1f1f1;
+    --text-color: #333;
+    --font-size: 16px;
+}
+
+/* Styling for the navigation */
+.navigation .menu .link {
+    color: var(--secondary-color);
+    padding: 20px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.navigation .menu .link:hover {
+    background: #333;
+    color: var(--secondary-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+.navigation .logo .logo-text {
+    color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: semi-bold;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation .menu {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Styling for the whole site */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
