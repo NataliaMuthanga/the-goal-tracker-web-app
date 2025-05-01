@@ -50,3 +50,26 @@ function displayGoals(data) {
 };
 displayGoals(goals);
 // localStorage.removeItem("goals")
+
+
+// Contact page
+let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+let contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const contact = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    contacts.push(contact);
+    localStorage.setItem("contacts", JSON.stringify(contact));
+    contactForm.reset();
+});
