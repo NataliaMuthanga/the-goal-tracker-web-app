@@ -126,25 +126,6 @@ img {
     margin-right: 30px;
 }
 
-.hero .hero-details .button {
-    padding: 10px 20px;
-    color: white;
-    background-color:rgb(215, 206, 193);
-    border-radius: 5px;
-    max-width: 150px;
-    text-align: center;
-    border: 2px solid transparent;
-}
-
-.set-goals {
-    color: var(--text-color);
-}
-
-.hero .hero-details .button:hover {
-    background-color: transparent;
-    border: 2px solid var(--text-color);
-}
-
 /* Responsive media query code for max width 800px  */
 @media screen and (max-width: 800px) {
     :root {
@@ -261,4 +242,69 @@ img {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 20px;
+}
+
+/* Styling goal section. */
+
+#goal-section .goal-title {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+#goal-section .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto 40px;
+    border: transparent;
+    background-color: darkgray;
+    padding: 20px 20px 20px 20px;
+    gap: 10px;
+}
+
+.goal-btn {
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    max-width: 150px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.goal-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+}
+
+#goal-section .goal-intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#goal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--primary-color);
+    width: fit-content;
+    margin: 20px;
+    margin-bottom: 20px;
+    color: white;
+    border: 2px solid black;
+}
+
+.goal {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#my-goals {
+    text-align: center;
 }

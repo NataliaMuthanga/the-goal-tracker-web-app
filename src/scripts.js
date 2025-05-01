@@ -10,3 +10,43 @@ menuOpenButton.addEventListener("click", function() {
 menuCloseButton.addEventListener("click", function(){
     menuOpenButton.click();
 });
+
+// Goal form
+let goals = JSON.parse(localStorage.getItem("goals")) || [];
+let goalForm = document.getElementById("goal-form");
+let goalList = document.getElementById("goal-list");
+
+goalForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const goalType = document.getElementById("type-of-goal").value;
+    const description = document.getElementById("description").value.trim();
+    const date = document.getElementById("date").value;
+
+    const goal = {
+        goalType: goalType,
+        description: description,
+        date: date
+    };
+
+    goals.push(goal);
+    localStorage.setItem("goals", JSON.stringify(goals));
+    goalForm.reset();
+    displayGoals(goals);
+});
+
+function displayGoals(data) {
+    goalList.innerHTML = "";
+    data.forEach(goal => {
+        let div = document.createElement("div");
+        div.className = "goal";
+        div.innerHTML = `
+        <h1>${goal.goalType}</h1>
+        <h3>${goal.description}</h3>
+        <h3>${goal.date}</h3>
+        `;
+        goalList.appendChild(div);
+    });
+};
+displayGoals(goals);
+// localStorage.removeItem("goals")

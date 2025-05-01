@@ -34,10 +34,6 @@
                         <h1 class="title">Welcome To Your Goal Tracker.</h1>
                         <h2 class="subtitle">Begin The Journey!</h2>
                         <p class="introduction">Let us be part of your journey as you begin setting your goals.</p>
-                        
-                        <div class="button">
-                            <a href="#" class="set-goals">Set Goals!</a>
-                        </div>
                     </div>
                     <div class="hero-image">
                         <img src="./assets/images/bullseye.png" alt="Bullseye" class="hero-image">
@@ -46,6 +42,34 @@
             </section>
          </main>
          
+          <!-- Goal Section -->
+            <section id="goal-section">
+                <div class="goal-fm">
+                    <h2 class="goal-title">Set Goal Now!</h2>
+                    <p class="goal-intro">Set your goals and achieve them now.</p>
+                    <br>
+                    <form id="goal-form">
+                        <div class="form-group">
+                            <label for="type-of-goal">Choose the type of goal:</label>
+                            <select name="type" id="type-of-goal">
+                                <option value="Daily-goal">Daily Goal</option>
+                                <option value="Weekly-goal">Weekly Goal</option>
+                                <option value="Monthly-goal">Monthly Goal</option>
+                                <option value="Yearly-goal">Yearly Goal</option>
+                            </select>
+                            <label for="description">Give the description of your goal:</label>
+                            <input type="text" id="description" name="description" required>
+                            <label for="date">Give the date the goal is set:</label>
+                            <input type="date" id="date" name="date" required>
+                            <button class="goal-btn" type="submit">Add Goal</button>
+                        </div>
+                    </form>
+                    <section id="goal-list">
+                        <h2 id="my-goals">My Goals</h2>
+                    </section>
+                </div>
+            </section>
+
          <!-- Footer -->
          <footer class="home-footer">
             <div class="section-content">
